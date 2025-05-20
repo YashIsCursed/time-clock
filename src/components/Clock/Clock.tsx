@@ -3,9 +3,9 @@ import { useEffect, useState, useRef } from 'react'
 import gsap from 'gsap'
 import { useGSAP } from '@gsap/react'
 import Image from 'next/image'
-import Sectic from '../../public/Sectic.svg'
-import Mintic from '../../public/Mintic.svg'
-import Houtic from '../../public/Houtic.svg'
+import Sectic from '../../../public/Sectic.svg'
+import Houtic from '../../../public/Houtic.svg'
+import Mintic from '../../../public/Mintic.svg'
 import Today from './Today'
 const Clock = () => {
     const [currentTime, setCurrentTime] = useState(new Date());
@@ -63,18 +63,18 @@ const Clock = () => {
         })
     }, [currentTime])
     return (
-        <div className='text-8xl font-bold relative text-[#e1e1e1] w-full h-full flex justify-center items-center'>
+        <div className='text-8xl  font-bold relative text-[#e1e1e1] w-full h-full flex justify-center items-center'>
             <div
                 ref={RotateRef}
 
                 className='h-full w-full flex justify-center items-center absolute'>
-                <div className='h-full absolute w-full'>
+                <div className='select-none h-full absolute w-full'>
                     <Image src={Sectic} fill ref={Sechac} loading="eager" className="drop-shadow-white/10 drop-shadow-lg" alt='Seconds' />
                 </div>
-                <div className='h-[90%] absolute w-[90%]'>
+                <div className='select-none h-[90%] absolute w-[90%]'>
                     <Image src={Mintic} fill ref={Minhac} loading="eager" className="drop-shadow-white/10 drop-shadow-lg" alt='Min' />
                 </div>
-                <div className='h-[80%] absolute w-[80%]'>
+                <div className='select-none h-[80%] absolute w-[80%]'>
                     <Image src={Houtic} fill ref={Houhac} loading="eager" className="drop-shadow-white/10 drop-shadow-lg" alt='Min' />
                 </div>
                 <div className='h-[40%] left-8 flex flex-col justify-center items-center text-4xl absolute w-[20%]'>
