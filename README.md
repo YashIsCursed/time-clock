@@ -14,3 +14,6 @@
 1. I Currently have a problem where every time the Second Hand completes 360deg turn then the Highliter returnes to the next position in reverse direction
     - i do have the idea why this could is happening And Will fix in Up-comming Commit 
 2. 
+
+#### Fixes 
+1. There Was An Mistake where the Houre hand was not denoting the correct 12Hrs Clock Hand Location

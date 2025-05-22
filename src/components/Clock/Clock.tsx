@@ -37,7 +37,7 @@ const Clock = () => {
 
         })
         gsap.from(Houhac.current, {
-            rotate: Math.floor(currentTime.getHours() / 2) * (6)
+            rotate: Math.floor(currentTime.getHours() / 2) * (30)
         })
     })
     useGSAP(() => {
@@ -56,7 +56,7 @@ const Clock = () => {
 
             })
         gsap.from(Houhac.current, {
-            rotate: Math.floor(currentTime.getHours() / 2) * (6),
+            rotate: Math.floor(currentTime.getHours()) * (30),
             duration: 1,
             ease: "none"
 
